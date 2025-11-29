@@ -1,15 +1,51 @@
 # automatic-number-plate-recognition-python-yolov8
+A real-time Automatic Number Plate Recognition (ANPR) system built using YOLOv8, OpenCV, and EasyOCR/Tesseract.
+This project detects vehicle number plates from images or live video streams and extracts the alphanumeric text with high accuracy. It also includes automatic parking slot allocation and entry logging.
 
-<p align="center">
-<a href="https://www.youtube.com/watch?v=fyJB1t0o0ms">
-    <img width="600" src="https://utils-computervisiondeveloper.s3.amazonaws.com/thumbnails/with_play_button/anpr_yolo2.jpg" alt="Watch the video">
-    </br>Watch on YouTube: Automatic number plate recognition with Python, Yolov8 and EasyOCR !
-</a>
-</p>
+🔍 Project Overview
 
-## data
+This project uses YOLOv8 for fast and accurate number plate detection and integrates OCR to extract plate numbers.
+Once a plate is detected, the system:
 
-The video I used in this tutorial can be downloaded [here](https://www.pexels.com/video/traffic-flow-in-the-highway-2103099/).
+Reads the number plate text using OCR
+
+Allocates a parking slot automatically
+
+Stores vehicle entry details (plate number, slot, timestamp)
+
+Maintains logs in Excel/CSV format
+
+It can be used in smart parking, toll systems, security gates, and traffic monitoring.
+
+🚀 Features
+
+Real-time number plate detection using YOLOv8
+
+OCR-based text extraction with EasyOCR / Tesseract
+
+Automatic parking slot assignment
+
+Entry logs stored in Excel/CSV
+
+Fast inference (~50 ms per frame)
+
+Supports webcam & video input
+
+Works for Indian number plates & other formats
+
+🛠️ Tech Stack
+
+YOLOv8 (Ultralytics)
+
+Python
+
+OpenCV
+
+EasyOCR / Tesseract OCR
+
+Pandas for logging
+
+Numpy
 
 ## models
 
@@ -19,6 +55,4 @@ A licensed plate detector was used to detect license plates. The model was train
 
 The trained model is available in my [Patreon](https://www.patreon.com/ComputerVisionEngineer).
 
-## dependencies
 
-The sort module needs to be downloaded from [this repository](https://github.com/abewley/sort) as mentioned in the [video](https://youtu.be/fyJB1t0o0ms?t=1120).
